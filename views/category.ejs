@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Category</title>
+</head>
+<body>
+    <%- include('./partials/nav') %>
+  <h1><%= name %></h1>
+  <% menuItems.forEach((item, idx) => { %>
+      <h4><%= item.name%> $<%= item.price%></h4>
+      <p><%= item.details%><p>
+      <li>Rated <%= item.rating%> out of 5 terabytes.</li>
+    <% }); %> 
+</body>
+</html>
